@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="200dp"
+    android:layout_margin="@dimen/dp_16"
+    android:padding="@dimen/dp_16"
+    android:background="@color/list_item_bg_collapsed"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort Filter"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="Sort tasks:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/sp_16"
+        android:background="@drawable/ic_pill_back"
+        android:backgroundTint="#F7FDFF"
+        />
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_pill_back"
+        android:backgroundTint="#F7FDFF"
+        >
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16" />
+            <View
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_pill"
+                android:backgroundTint="@color/title_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16" />
+            <View
+                android:layout_width="170dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_pill"
+                android:backgroundTint="@color/subtitle_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_pill"
+                android:backgroundTint="@color/title_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_pill"
+                android:backgroundTint="@color/subtitle_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16" />
+            <View
+                android:layout_width="160dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_pill"
+                android:backgroundTint="@color/title_color" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="Completed tasks:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/sp_16"
+        android:background="@drawable/ic_pill_back"
+        android:backgroundTint="#F7FDFF"
+        />
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"/>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_pill"
+            android:backgroundTint="@color/title_color" />
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/textViewCancel"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginStart="@dimen/dp_100"
+            android:text="CANCEL"
+            android:gravity="center"
+            android:textColor="#F03800"
+            android:textSize="@dimen/sp_14"
+            android:background="@drawable/ic_pill_back"
+            android:backgroundTint="#F7FDFF" />
+        <TextView
+            android:id="@+id/textViewSave"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:text="SAVE"
+            android:gravity="center"
+            android:textColor="#F03800"
+            android:textSize="@dimen/sp_14"
+            android:background="@drawable/ic_pill_back"
+            android:backgroundTint="#F7FDFF" />
+    </LinearLayout>
+</LinearLayout>
